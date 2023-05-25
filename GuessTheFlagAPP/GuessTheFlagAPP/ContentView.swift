@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+   
+  
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            MainAppView()
         }
         .padding()
+        .background(LinearGradient(colors: [.red,.blue], startPoint: .top, endPoint: .bottom))
+        
+       
     }
 }
 

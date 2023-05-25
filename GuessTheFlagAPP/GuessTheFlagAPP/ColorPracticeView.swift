@@ -10,15 +10,27 @@ import SwiftUI
 struct ColorPracticeView: View {
     var body: some View {
         ZStack{
+           
             VStack(spacing: 0){
                 Color.red
                 Color.blue
+                Color(red:0.2,green:0.6, blue: 0.3 )
             }
-            Text("Colors and Frames")
-                .padding(50)
-                .foregroundStyle(.ultraThinMaterial)
-                .background(.secondary)
-                
+            VStack{
+                VStack(alignment: .leading){
+                    Text("Add Border")
+            
+                }
+                .font(.title)
+                .foregroundStyle(.ultraThickMaterial)
+                .frame(maxWidth: .infinity)
+                .background(.black)
+                .padding(.top)
+                Text("Colors and Frames")
+                    .padding(50)
+                    .foregroundStyle(.ultraThinMaterial)
+                    .background(.secondary)
+            }
         }.ignoresSafeArea()
     }
 }

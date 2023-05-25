@@ -14,6 +14,7 @@
 		A7213D8F2A1CF3180080234E /* ColorPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7213D8E2A1CF3180080234E /* ColorPracticeView.swift */; };
 		A7213D912A1CF55D0080234E /* GradientPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7213D902A1CF55D0080234E /* GradientPracticeView.swift */; };
 		A77D60FF2A1DD56500D290A3 /* ButtonPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77D60FE2A1DD56500D290A3 /* ButtonPracticeView.swift */; };
+		A7C610C62A1F3E85004050D2 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C610C52A1F3E85004050D2 /* MainAppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A7213D8E2A1CF3180080234E /* ColorPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPracticeView.swift; sourceTree = "<group>"; };
 		A7213D902A1CF55D0080234E /* GradientPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPracticeView.swift; sourceTree = "<group>"; };
 		A77D60FE2A1DD56500D290A3 /* ButtonPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPracticeView.swift; sourceTree = "<group>"; };
+		A7C610C52A1F3E85004050D2 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				A7213D802A1CEF890080234E /* GuessTheFlagAPPApp.swift */,
 				A7213D822A1CEF890080234E /* ContentView.swift */,
+				A7C610C52A1F3E85004050D2 /* MainAppView.swift */,
 				A7213D8E2A1CF3180080234E /* ColorPracticeView.swift */,
 				A7213D902A1CF55D0080234E /* GradientPracticeView.swift */,
 				A77D60FE2A1DD56500D290A3 /* ButtonPracticeView.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77D60FF2A1DD56500D290A3 /* ButtonPracticeView.swift in Sources */,
+				A7C610C62A1F3E85004050D2 /* MainAppView.swift in Sources */,
 				A7213D8F2A1CF3180080234E /* ColorPracticeView.swift in Sources */,
 				A7213D912A1CF55D0080234E /* GradientPracticeView.swift in Sources */,
 				A7213D832A1CEF890080234E /* ContentView.swift in Sources */,

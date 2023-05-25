@@ -77,7 +77,7 @@ struct ContentView: View {
                 Form{
                     Group{
                         LabeledContent("Amount", value: "\(checkAmt)" )
-                      
+                        
                         LabeledContent("Tip percentage", value: "\(tipPercent)")
                     }
                     Section{
@@ -111,6 +111,7 @@ struct ContentView: View {
                 
                 
             }
+        
         
     }
         .padding()
