@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+//view composition
+struct FlagImage : View{
+    var image : String = ""
+    var body: some View{
+        Image(image.lowercased())
+            .renderingMode(.original)
+            .clipShape(RoundedRectangle(cornerRadius: 30))
+            .shadow(radius: 20,x:20)
+    }
+}
+
+
 struct MainAppView: View {
     @State private var countries = ["Estonia","France","Germany","Ireland","Italy","Monaco","Nigeria","Poland","Russia","Spain","UK","US"]
     @State private var clickedAnswer = ""
@@ -43,7 +55,7 @@ struct MainAppView: View {
                 //                center: .top, startRadius:88 , endRadius: 500)
                 
             }.ignoresSafeArea()
-            if(showMyResult){
+            if(!showMyResult){
                 VStack{
                     
                     VStack(spacing: 50){
@@ -59,10 +71,9 @@ struct MainAppView: View {
                                 calScore()
                                 showNext = true
                             }label: {
-                                Image(countries[num].lowercased())
-                                    .renderingMode(.original)
-                                    .clipShape(RoundedRectangle(cornerRadius: 30))
-                                    .shadow(radius: 20,x:20)
+                                //view composition
+                                FlagImage(image: countries[num])
+                                    
                             }
                             
                         }

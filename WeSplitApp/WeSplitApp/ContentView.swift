@@ -50,6 +50,7 @@ struct ContentView: View {
                     Picker("Tip Percentage" , selection: $tipPercent){
                         ForEach(tippercentages,id: \.self){
                             Text($0,format: .percent)
+                                .foregroundColor(.red)
                         }
                     }
                     .pickerStyle(SegmentedPickerStyle())
@@ -79,6 +80,8 @@ struct ContentView: View {
                         LabeledContent("Amount", value: "\(checkAmt)" )
                         
                         LabeledContent("Tip percentage", value: "\(tipPercent)")
+                            .foregroundColor(tipPercent == 0 ? .red : .black)
+                            
                     }
                     Section{
                         Text(totalAndCostPerPerson.cpp,format:.currency(code: "USD"))
@@ -87,7 +90,8 @@ struct ContentView: View {
                     }
                    
                     Section{
-                        Text(totalAndCostPerPerson.total,format:.currency(code: "USD")).foregroundColor(.white)
+                        Text(totalAndCostPerPerson.total,format:.currency(code: "USD"))
+                            .foregroundColor(.white)
                     }
                 header: {
                         HStack{

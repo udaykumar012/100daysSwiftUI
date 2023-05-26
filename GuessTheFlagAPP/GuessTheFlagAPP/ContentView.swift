@@ -14,8 +14,8 @@ struct ContentView: View {
         VStack{
             MainAppView()
         }
-        .padding()
-        .background(LinearGradient(colors: [.red,.blue], startPoint: .top, endPoint: .bottom))
+        //.padding()
+        //.background(LinearGradient(colors: [.red,.blue], startPoint: .top, endPoint: .bottom))
         
        
     }
