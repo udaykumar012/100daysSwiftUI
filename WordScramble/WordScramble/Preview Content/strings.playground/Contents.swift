@@ -19,7 +19,7 @@ func spellChecker(_ str : String ){
     let missplledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
     let isSpellCorrect =  (missplledRange.location == NSNotFound)
     print("spelling correct : \(isSpellCorrect)")
-    print(missplledRange,missplledRange.location,missplledRange.length)
+    print(missplledRange,missplledRange.location,missplledRange.length )
 }
 
 spellChecker("friend")
