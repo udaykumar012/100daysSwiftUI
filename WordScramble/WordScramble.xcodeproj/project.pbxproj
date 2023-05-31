@@ -62,8 +62,8 @@
 			children = (
 				A79059242A24C4D60090C72A /* WordScrambleApp.swift */,
 				A79059262A24C4D60090C72A /* ContentView.swift */,
-				A79059342A24C5230090C72A /* BundleUrlView.swift */,
 				A790593B2A24CB0E0090C72A /* MainAppView.swift */,
+				A79059342A24C5230090C72A /* BundleUrlView.swift */,
 				A79059282A24C4D70090C72A /* Assets.xcassets */,
 				A79059362A24C5680090C72A /* start.txt */,
 				A79059382A24C87F0090C72A /* sample.txt */,
