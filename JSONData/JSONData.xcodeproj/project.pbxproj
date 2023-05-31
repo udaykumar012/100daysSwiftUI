@@ -11,11 +11,13 @@
 		A7294E7F2A238EB60046EFE4 /* JSONmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7294E7E2A238EB60046EFE4 /* JSONmanager.swift */; };
 		A768B69E2A245DB500CA1FBA /* LazyVHgridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768B69D2A245DB500CA1FBA /* LazyVHgridView.swift */; };
 		A79EEBEF2A2393500001892B /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79EEBEE2A2393500001892B /* BookView.swift */; };
+		A7A069E82A26435D001D9CCC /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A069E72A26435D001D9CCC /* AddBookView.swift */; };
 		A7B892672A23801B001E3E55 /* JSONDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B892662A23801B001E3E55 /* JSONDataApp.swift */; };
 		A7B892692A23801B001E3E55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B892682A23801B001E3E55 /* ContentView.swift */; };
 		A7B8926B2A23801C001E3E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B8926A2A23801C001E3E55 /* Assets.xcassets */; };
 		A7B8926E2A23801C001E3E55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B8926D2A23801C001E3E55 /* Preview Assets.xcassets */; };
 		A7C137AB2A24912800C543EC /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = A7C137AA2A24912800C543EC /* example.json */; };
+		A7DF34132A27086C001D8C04 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DF34122A27086C001D8C04 /* BookModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +26,14 @@
 		A7294E7E2A238EB60046EFE4 /* JSONmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONmanager.swift; sourceTree = "<group>"; };
 		A768B69D2A245DB500CA1FBA /* LazyVHgridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVHgridView.swift; sourceTree = "<group>"; };
 		A79EEBEE2A2393500001892B /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		A7A069E72A26435D001D9CCC /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		A7B892632A23801B001E3E55 /* JSONData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B892662A23801B001E3E55 /* JSONDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataApp.swift; sourceTree = "<group>"; };
 		A7B892682A23801B001E3E55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7B8926A2A23801C001E3E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7B8926D2A23801C001E3E55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7C137AA2A24912800C543EC /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		A7DF34122A27086C001D8C04 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				A7B892662A23801B001E3E55 /* JSONDataApp.swift */,
 				A7B892682A23801B001E3E55 /* ContentView.swift */,
 				A72329F32A238A7C004580D2 /* MainAppView.swift */,
+				A7A069E72A26435D001D9CCC /* AddBookView.swift */,
 				A79EEBEE2A2393500001892B /* BookView.swift */,
 				A768B69D2A245DB500CA1FBA /* LazyVHgridView.swift */,
 				A7B8926A2A23801C001E3E55 /* Assets.xcassets */,
@@ -80,6 +85,7 @@
 				A7C137AA2A24912800C543EC /* example.json */,
 				A72329F22A23880D004580D2 /* jsonSingleData.playground */,
 				A7294E7E2A238EB60046EFE4 /* JSONmanager.swift */,
+				A7DF34122A27086C001D8C04 /* BookModel.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -155,11 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A069E82A26435D001D9CCC /* AddBookView.swift in Sources */,
 				A72329F42A238A7C004580D2 /* MainAppView.swift in Sources */,
 				A7294E7F2A238EB60046EFE4 /* JSONmanager.swift in Sources */,
 				A7B892692A23801B001E3E55 /* ContentView.swift in Sources */,
 				A7B892672A23801B001E3E55 /* JSONDataApp.swift in Sources */,
 				A768B69E2A245DB500CA1FBA /* LazyVHgridView.swift in Sources */,
+				A7DF34132A27086C001D8C04 /* BookModel.swift in Sources */,
 				A79EEBEF2A2393500001892B /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

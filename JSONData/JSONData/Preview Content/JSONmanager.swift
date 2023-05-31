@@ -9,8 +9,9 @@ import Foundation
 
 //codable for encode and decode json data
 //identifiable for instances hold the value of an entity with stable ids
-struct Book : Codable ,Identifiable{
-    let id, author, country: String
+struct Book : Codable ,Identifiable,Hashable{
+    var id  = UUID().uuidString
+    let author, country: String
     let imageLink: String
     let language: String
     let link: String
