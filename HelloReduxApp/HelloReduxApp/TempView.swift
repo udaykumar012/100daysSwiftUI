@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct TempView: View {
+    @EnvironmentObject var store: Store
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(store.state.counter)")
     }
 }
 
 struct TempView_Previews: PreviewProvider {
     static var previews: some View {
-        TempView()
+        TempView().environmentObject(Store())
     }
 }

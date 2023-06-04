@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7171FB42A2B24A6002079B5 /* HelloReduxAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7171FB32A2B24A6002079B5 /* HelloReduxAppApp.swift */; };
+		A7171FB42A2B24A6002079B5 /* HelloReduxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7171FB32A2B24A6002079B5 /* HelloReduxApp.swift */; };
 		A7171FB62A2B24A6002079B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7171FB52A2B24A6002079B5 /* ContentView.swift */; };
 		A7171FB82A2B24A7002079B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7171FB72A2B24A7002079B5 /* Assets.xcassets */; };
 		A7171FBB2A2B24A7002079B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7171FBA2A2B24A7002079B5 /* Preview Assets.xcassets */; };
+		A7171FC32A2B2518002079B5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7171FC22A2B2518002079B5 /* Store.swift */; };
+		A7DBEFF52A2C76E7003E8625 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBEFF42A2C76E7003E8625 /* TempView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7171FB02A2B24A6002079B5 /* HelloReduxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloReduxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7171FB32A2B24A6002079B5 /* HelloReduxAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloReduxAppApp.swift; sourceTree = "<group>"; };
+		A7171FB32A2B24A6002079B5 /* HelloReduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloReduxApp.swift; sourceTree = "<group>"; };
 		A7171FB52A2B24A6002079B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7171FB72A2B24A7002079B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7171FBA2A2B24A7002079B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7171FC22A2B2518002079B5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A7DBEFF42A2C76E7003E8625 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		A7171FB22A2B24A6002079B5 /* HelloReduxApp */ = {
 			isa = PBXGroup;
 			children = (
-				A7171FB32A2B24A6002079B5 /* HelloReduxAppApp.swift */,
+				A7171FB32A2B24A6002079B5 /* HelloReduxApp.swift */,
 				A7171FB52A2B24A6002079B5 /* ContentView.swift */,
+				A7DBEFF42A2C76E7003E8625 /* TempView.swift */,
+				A7171FC12A2B2506002079B5 /* Store */,
 				A7171FB72A2B24A7002079B5 /* Assets.xcassets */,
 				A7171FB92A2B24A7002079B5 /* Preview Content */,
 			);
@@ -65,6 +71,14 @@
 				A7171FBA2A2B24A7002079B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7171FC12A2B2506002079B5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A7171FC22A2B2518002079B5 /* Store.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7171FC32A2B2518002079B5 /* Store.swift in Sources */,
 				A7171FB62A2B24A6002079B5 /* ContentView.swift in Sources */,
-				A7171FB42A2B24A6002079B5 /* HelloReduxAppApp.swift in Sources */,
+				A7DBEFF52A2C76E7003E8625 /* TempView.swift in Sources */,
+				A7171FB42A2B24A6002079B5 /* HelloReduxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

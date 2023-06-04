@@ -8,7 +8,8 @@
 import SwiftUI
 
 @main
-struct HelloReduxAppApp: App {
+struct HelloReduxApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
