@@ -28,19 +28,26 @@ struct MainAppView: View {
                     List{
                         ForEach($books.allBooks,id: \.id){ $book in
                             Section{
-                                BookView(book: $book)
-                                    .onTapGesture(count:2){
-                                        selectedBook = book
-                                        isSelectedBook = true
-                                        print(selectedBook.author)
-                                        
-                                        
-                                    }
-                                    .listRowBackground(Color(red: 0.9, green: 0.9, blue: 0.9))
+                                
+                                   
+                                
+                                NavigationLink {
+                                    BookView(book: $book)
+                                } label: {
+                                    BookView(book: $book)
+                                        .onTapGesture(count:2){
+                                            selectedBook = book
+                                            isSelectedBook = true
+                                            print(selectedBook.author)
+                                            
+                                            
+                                        }
+                                } .listRowBackground(Color(red: 0.9, green: 0.9, blue: 0.9))
                                 
                                 Link(destination: URL(string: book.imageLink)!) {
                                     Text("Image Link")
                                         .foregroundColor(.white).bold()
+
                                 }
                                 .listRowBackground(Color(red: 0, green: 0.5, blue: 1, opacity : 0.9))
                                 

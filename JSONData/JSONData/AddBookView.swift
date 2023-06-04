@@ -60,7 +60,7 @@ struct AddBookView: View {
             }
             VStack{
                 Button("ADD"){
-                    let newBookItem = Book(author: author, country: country, imageLink: "https://unsplash.com/photos/9DaOYUYnOls", language: language, link: "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n", pages: pages!, title: bookTitle, year:year!)
+                    let newBookItem = Book(author: author, country: country, imageLink: "https://unsplash.com/photos/9DaOYUYnOls", language: language, link: "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n", pages: pages ?? 0, title: bookTitle, year:year ?? 1994)
                     books.allBooks.append(newBookItem)
                     
                 }
