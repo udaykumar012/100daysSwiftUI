@@ -25,9 +25,9 @@ struct Response:Codable{
 struct Result: Codable {
     var trackId: Int
     var trackName: String
-    
+    var artworkUrl100 : String
 }
-struct pracView2: View {
+struct JsonItunesView2: View {
     @State private var result = [Result]()
     func loadData() async{
         //async func are those where getting data takes sometime or the func may sleep some time on that time you can perform other functions
@@ -62,11 +62,13 @@ struct pracView2: View {
     
     var body: some View {
         VStack {
-            List(result,id: \.trackId){
-                res in
+            List($result,id: \.trackId){
+                $res in
                 Section {
-                    Text(res.trackName)
-                    
+                    HStack{
+                        ItunesAsyncImageView(imgString: $res.artworkUrl100)
+                        Text(res.trackName)
+                    }
                 } header: {
                     Text("\(res.trackId)")
                 }
@@ -84,8 +86,8 @@ struct pracView2: View {
     }
 }
 
-struct pracView2_Previews: PreviewProvider {
+struct JsonItunesView2_Previews: PreviewProvider {
     static var previews: some View {
-        pracView2()
+        JsonItunesView2()
     }
 }

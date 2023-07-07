@@ -17,7 +17,7 @@ struct Book : Codable{
     var description : String
 }
 
-struct pracView3: View {
+struct JSONbookView3: View {
     @State private var myBooks = [Book]()
     func loadBookData() async{
         //3 steps
@@ -65,8 +65,8 @@ struct pracView3: View {
     }
 }
 
-struct pracView3_Previews: PreviewProvider {
+struct JSONbookView3_Previews: PreviewProvider {
     static var previews: some View {
-        pracView3()
+        JSONbookView3()
     }
 }
