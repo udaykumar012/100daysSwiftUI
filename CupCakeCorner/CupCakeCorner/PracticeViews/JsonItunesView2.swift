@@ -35,7 +35,7 @@ struct JsonItunesView2: View {
         print("started....")
         //3 steps
         //1)reading url //jsonplaceholder.typicode.com/users
-        guard let url = URL(string: "https://itunes.apple.com/search?term=jack+johnson&limit=5")
+        guard let url = URL(string: "http://itunes.apple.com/search?term=taylor+swift&entity=song")
         else{
             print("Invalid URL unable to respond")
             return
